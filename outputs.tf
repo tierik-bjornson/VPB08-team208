@@ -16,31 +16,27 @@ output "private_key_path" {
 # ============================================
 
 output "raw_bucket" {
-  description = "Tên bucket chứa raw file"
+  description = "Ten bucket chua raw file"
   value       = module.s3.raw_bucket_name
 }
 
 output "processed_bucket" {
-  description = "Tên bucket chứa file đã xử lý"
+  description = "Ten bucket chua file đa xu ly"
   value       = module.s3.processed_bucket_name
 }
 
 output "deployment_package_bucket" {
-  description = "Tên bucket chứa deployment package"
+  description = "Ten bucket chua deployment package"
   value       = module.s3.deployment_package_bucket
 }
 
 output "report_bucket" {
-  description = "Tên bucket chứa báo cáo"
+  description = "Ten bucket chua bao cao"
   value       = module.s3.report_bucket_name
 }
 
-# ============================================
-# 🖥️ EC2 Outputs
-# ============================================
-
 output "ec2_instance_ids" {
-  description = "Danh sách ID EC2 instance đã tạo"
+  description = "Danh sach ID EC2 instance đa tao"
   value       = module.ec2.instance_ids
 }
 
